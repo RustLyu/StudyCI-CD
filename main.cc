@@ -3,7 +3,8 @@
 
 int main()
 {
-    std::cout << kk << std::endl;
+    int* kk;
+    std::cout << *kk << std::endl;
     std::cout << "hello world!:=)" << std::endl;
     return 0;
 }
