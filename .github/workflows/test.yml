@@ -2,9 +2,11 @@ name: main app
 
 on:
   push:
-   branches:["main"]
+    branches: [ "main" ]
+
 permissions:
-    contents:read
+    contents: read
+
 jobs:
     test:
         runs-on: ubuntu-latest
