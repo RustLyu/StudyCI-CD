@@ -9,9 +9,9 @@ jobs:
     test:
         run-on: ubuntu-latest
         steps:
-            - name: compile
+          - name: compile
             run: |
-                g++ -O3 main.cc -o main
-            - name: test_run
-              run: |
-                 ./main
+              g++ -O3 main.cc -o main
+          - name: test_run
+            run: |
+              ./main
