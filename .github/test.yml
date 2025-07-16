@@ -1,0 +1,16 @@
+name: main app
+
+on:
+    push:
+        branches:["main"]
+permissions:
+    contents:read
+jobs:
+    test:
+        run-on:ubuntu-latest
+    steps:
+        -name:compile
+         run: |
+            g++ -O3 main.cc -o main
+        -name:test_run
+            ./main
